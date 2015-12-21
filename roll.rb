@@ -1,9 +1,10 @@
 class Roll
   attr_reader :values
 
-  def initialize(dice)
+  def initialize(dice, values=nil)
     @values = []
     dice.times { @values << rand(1..6) }
+    @values = values unless values.nil?
   end
 
   def calculate_score
