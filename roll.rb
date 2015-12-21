@@ -4,7 +4,6 @@ class Roll
   def initialize(dice)
     @values = []
     dice.times { @values << rand(1..6) }
-    @values
   end
 
   def calculate_score
@@ -12,7 +11,7 @@ class Roll
     numbers = Hash.new 0
     non_scoring, non_scoring_numbers = 0, [2, 3, 4, 6]
 
-    @values.each do |n|
+    self.values.each do |n|
       numbers[n] += 1
       if numbers[n] == 3
         score += (n == 1) ? 1000 : 100 * n
