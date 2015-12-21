@@ -8,11 +8,12 @@
 $ git clone https://github.com/rokibulhassan/BeingLucky.git
 $ cd BeingLucky
 $ bundle install
+```
 
 ### Play game
 ```sh
 $ ruby play.rb
-
+```
 
 * Read prompt on terminal
 * Press Y|n to continue or end Player turn
@@ -22,3 +23,4 @@ $ ruby play.rb
 ```sh
 $ cd BeingLucky
 $ rspec spec
+```
