@@ -10,13 +10,15 @@ $ cd BeingLucky
 $ bundle install
 
 ### Play game
+```sh
 $ ruby play.rb
+
 
 * Read prompt on terminal
 * Press Y|n to continue or end Player turn
 
-### Run Test
 
+### Run Test
 ```sh
 $ cd BeingLucky
 $ rspec spec
